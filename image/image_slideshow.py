@@ -23,5 +23,5 @@ class Slideshow:
             time.sleep(self.time)
 
 
-ob=Slideshow('/home/ayush/Desktop/',3)
+ob=Slideshow('absolute_path',int('time_in_seconds'))
 ob.start_slideshow()
