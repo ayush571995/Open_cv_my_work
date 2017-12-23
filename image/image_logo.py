@@ -1,6 +1,6 @@
 import cv2
-img1=cv2.imread('/home/ayush/Desktop/board_image.jpg')
-img2=cv2.imread('/home/ayush/Desktop/cards.jpg')
+img1=cv2.imread('path/name_img')
+img2=cv2.imread('path/name_img')
 # I want to put logo on top-left corner, So I create a ROI
 rows,cols,channels = img2.shape
 roi = img1[0:rows, 0:cols ]

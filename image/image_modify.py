@@ -1,6 +1,6 @@
 import cv2
 import numpy as np
-img=cv2.imread('/home/ayush/Desktop/faltu/IMG_20160106_172031.jpg')
+img=cv2.imread('path/name_img')
 from matplotlib import pyplot as plt
 BLUE=[0,0,255]
 cv2.namedWindow('image',cv2.WINDOW_NORMAL)
