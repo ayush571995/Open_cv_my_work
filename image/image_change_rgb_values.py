@@ -3,7 +3,7 @@ import cv2
 def nothing(x):
     pass
 
-img=cv2.imread('path',0)
+img=cv2.imread('/home/ayush/Desktop/cards.jpg',0)
 
 cv2.namedWindow('image',cv2.WINDOW_NORMAL)
 

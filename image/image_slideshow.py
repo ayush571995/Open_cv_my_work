@@ -2,15 +2,14 @@ import os,cv2,time
 class Slideshow:
 
 
-    def __init__(self,path,time=3):
+    def __init__(self,path,time_set=3):
         self.absolute_path_list=[]
-        self.time=time
+        self.time_set=time_set
         for root,dirs,files in os.walk(path,topdown=False):
             for names in files:
                 if '.jpg' in names or '.JPG' in names or '.png' in names or '.PNG' in names :
                     self.absolute_path_list.append(os.path.join(root,names))
         self.length_list=len(self.absolute_path_list)
-
     def start_slideshow(self):
         for index in range(self.length_list):
             img1=cv2.imread(self.absolute_path_list[index])
@@ -20,8 +19,7 @@ class Slideshow:
             if k == ord('q') or k==27:
                 cv2.destroyAllWindows()
                 exit(0)
-            time.sleep(self.time)
+            time.sleep(self.time_set)
 
 
-ob=Slideshow('absolute_path',int('time_in_seconds'))
-ob.start_slideshow()
+ob=Slideshow('path',int('3'))
